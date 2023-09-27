@@ -25,14 +25,13 @@ function addNewLaunch() {
     launches.set(latestFlightNumber, {
       ...launch,
       mission: true,
-      upcoming: true,
+      upcoming: "vvv",
       customers: ["Nasa", "Test"],
       flightNumber: latestFlightNumber,
     });
 
     return {
       ...launch,
-      mission: true,
       upcoming: true,
       customers: ["Nasa", "Test"],
       flightNumber: latestFlightNumber,
