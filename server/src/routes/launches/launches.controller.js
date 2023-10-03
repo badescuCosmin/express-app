@@ -29,6 +29,7 @@ async function httpAddNewLaunch(req, res) {
   }
 
   const addedLaunch = await scheduleNewLaunch(launch);
+  console.log(addedLaunch, "show");
 
   return res.status(201).json(addedLaunch);
 }

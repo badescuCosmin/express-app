@@ -124,6 +124,7 @@ async function scheduleNewLaunch(launch) {
   });
 
   await saveLaunch(newLaunch);
+  return newLaunch;
 }
 
 async function existsLaunchWithId(launchId) {
